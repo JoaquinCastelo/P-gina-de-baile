@@ -1,0 +1,211 @@
+/*Global*/
+*{
+	font-family: "Latolight";
+	margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el padding predeterminado */
+}
+
+/* fuentes de texto */
+@font-face{
+	font-family: LatoHeavy;
+	src: url(fonts/Lato-Heavy.ttf);
+}
+@font-face{
+	font-family:Latolight ;
+	src: url(fonts/Latolight.ttf);
+}
+@font-face{
+	font-family: DolceVita;
+	src: url(fonts/DolceVita.ttf);
+}
+@font-face{
+	font-family: Neoteric-Bold;
+	src: url(fonts/Neoteric-Bold.ttf);
+}
+
+/* Shortcuts */
+
+.header {
+    color: rgb(83, 88, 95);
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para el menú */
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0px;
+}
+
+.menu li {
+    margin: 0 40px 20px 40px;
+	font-size: 20px;
+	font-family:'Latolight';
+}
+
+.menu li:first-child {
+    margin-left: 0; /* Elimina el margen izquierdo del primer elemento */
+}
+
+.menu li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+.t1{
+	text-align: center;
+	color: #192951;
+	font-family:'Latolight';
+	margin: 30px;
+}
+
+.contenedor{
+	position: relative; /* Establece la posición relativa para que los elementos hijos se posicionen relativos a este */
+    width: 100%; /* Ajusta el ancho del contenedor según sea necesario */
+    height: 580px; /* Ajusta la altura del contenedor según sea necesario */
+    color: white; /* Establece el color del texto */
+}
+
+.contenedor .te {
+    position: absolute; /* Establece la posición absoluta para que el texto se superponga sobre la imagen */
+	color: rgb(196, 198, 196);
+	font-size: 100px;
+    top: 15%; /* Coloca el texto en la mitad superior del contenedor */
+    left: 10%; /* Centra horizontalmente el texto en el contenedor */
+}
+
+
+.contenedor p{
+	position:absolute;
+	color: rgb(196, 198, 196);
+	top: 40%;
+	left: 10%;
+	font-size: 20px;
+}
+
+.contenedor .j{
+	left: 10%;
+	top: 65%;
+	padding: 20px 50px 20px 50px;
+}
+
+.contenedor .j2{
+	top: 60%;
+	padding: 35px 140px 35px 140px;
+	border-radius: 10px;
+	background-color: rgb(26, 41, 82);
+	left: 50%;
+	transform: translate(-50%, -60%);
+}
+
+.hei{
+	height:360px;
+}
+
+.img1{
+	background-image: url('img/dance_1.jpg');
+	background-size: cover;
+}
+
+.textura2{
+	background-image: url('img/textura_2.jpg');
+	background-repeat: repeat;
+}
+
+.decor1{
+	position: absolute; /* Establece la posición absoluta */
+	top: 35%; /* Coloca la parte superior de la imagen en el centro vertical del contenedor */
+    left: 50%;
+	transform: translate(-50%, -35%);
+	width: 160px;
+}
+
+.contenedordoble{
+	border: 2px solid #192951; /* Borde por dentro */
+    box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño del contenedor */
+    padding: 2px;
+	background-image: url('img/instructor_4.jpg'),url('img/profesor_9.jpg');
+    background-position: left -5px, right 5px; /* Posición de las imágenes */
+    background-size: 50% auto, 50% auto; /* Cada imagen ocupa el 50% del ancho del contenedor */
+    position: relative; /* Establece la posición relativa para que los elementos hijos se posicionen relativos a este */
+    width: 100%; /* Ajusta el ancho del contenedor según sea necesario */
+    height: 450px; /* Ajusta la altura del contenedor según sea necesario */
+    color: white; /* Establece el color del texto */
+	background-repeat: no-repeat, repeat-y; /* Repetición de las imágenes */
+}
+
+.bazul{
+	font-size: 30px;
+	position:absolute;
+	color: white;
+	top: 100%;
+	padding: 35px 305px 35px 305px;
+	background-color: rgb(26, 41, 82);
+	left: 50%;
+	transform: translate(-50%, -100%);
+}
+
+.man{
+	font-family: "Latolight";
+	font-style: italic;
+	font-size: 60px;
+	color:black;
+	position: absolute;
+	top:20px;
+    text-align: center;
+}
+
+.pd-0{
+	padding: 0;
+}
+.pt-5{
+	padding-top: 5%;
+}
+.pb-5{
+	padding-bottom: 5%;
+}
+.mg-0{
+	margin: 0;
+}
+.mg-10{
+	margin: 30px;
+}
+.w-100{
+	width: 100%;
+}
+.lh{
+	line-height: 1.5;
+}
+.lh2{
+	line-height: 2;
+}
+.text-center{
+	text-align: center;
+}
+.text-left{
+	text-align: left;
+}
+.text-white{
+	color: white;
+}
+.text-gray{
+	color: rgb(83, 88, 95);
+}
+.text-blue{
+ 	color: #192951;
+}
+.a-none-decoration{
+	text-decoration: none;
+}
+.bg-gray{
+	background-color: rgb(244, 244, 244);
+}
+.bg-gray2{
+	background-color: rgba(0, 0, 0,0.3);
+}
+.bg-img-block{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
